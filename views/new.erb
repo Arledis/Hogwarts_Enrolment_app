@@ -1,0 +1,17 @@
+ <form action="/students/" method="post">
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="first_name" />
+  <label for="last-name">Last Name:</label>
+  <input id="last-name" type="text" name="last_name" />
+  <label for="house">House:</label>
+  <select id="house-select" name="House">
+    <option value="<%=@student.house_id%>">Gryffindor</option>
+    <option value="<%=@student.house_id%>">Ravenclaw</option>
+    <option value="<%=@student.house_id%>">Hufflepuff</option>
+    <option value="<%=@student.house_id%>">Slytherin</option>
+  </select>
+  <label for="age">Age:</label>
+  <input id="age" type="number" name="age" />
+  <input type="submit" value="Enroll Student">
+
+</form>
